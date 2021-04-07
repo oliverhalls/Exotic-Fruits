@@ -4,11 +4,9 @@ import {
     Toolbar,
     IconButton,
     Badge,
-    MenuItem,
-    Menu,
     Typography
 } from '@material-ui/core';
-import {Shop, ShoppingCart} from '@material-ui/icons';
+import {ShoppingCart} from '@material-ui/icons';
 import useStyles from './styles';
 import logo from '../../assets/1509483582.svg';
 import { Link, useLocation } from 'react-router-dom';
@@ -21,8 +19,8 @@ const Navbar = ({ totalItems }) => {
             <AppBar position={'fixed'} className={classes.appBar} color={'inherit'}>
                 <Toolbar>
                     <Typography component={Link} to={"/"} variant={'h6'} className={classes.title} color={'inherit'}>
-                        <img src={logo} alt={'Oliver-Stores'} height={'25px'} className={classes.image} />
-                        Oliver-Stores
+                        <img src={logo} alt={'Exotic-Fruits'} height={'25px'} className={classes.image} />
+                        Exotic-Fruits
                     </Typography>
                     <div className={classes.grow}/>
                     {location.pathname === "/" && (
